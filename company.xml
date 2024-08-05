@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This xml document is represting company employee directory-->
+ <!-- Snake case emp_name , pascal case ContactDetails  Camel Case  contactDetails -->
+<Company>
+    <Department deptCode="DC01">
+        <Employee empId="EC01">
+            <empId>EC01</empId>
+           <Name>Zeal</Name>
+           <Position>Software Developer</Position>
+           <ContactDetails>
+              <mobile>+91 9898989898</mobile>
+              <Email>Zeal@gmail.com</Email>
+              <FixedLine>+91 9898989898</FixedLine>
+           </ContactDetails>
+        </Employee>
+       
+        <Employee empId="EC02">
+            <Name>Jared</Name>
+           <Position>Software Developer</Position>
+           <ContactDetails>
+             <Phone>+91 9898989898</Phone>
+             <Email>Zeal@gmail.com</Email>
+           </ContactDetails>
+           <DateOfJoining>2024-07-01</DateOfJoining>
+        </Employee>
+     </Department>
+     <Department deptCode="DC02">
+        <Employee empId="EC03">
+           <Name>Zeal</Name>
+           <Position>Software Developer</Position>
+           <ContactDetails>
+              <Phone>+91 9898989898</Phone>
+              <Email>Zeal@gmail.com</Email>
+           </ContactDetails>
+        </Employee>
+     </Department>   
+</Company>

@@ -1,0 +1,59 @@
+<!ELEMENT LMS (Users,Courses,Assessments,Reports)>
+<!ELEMENT Student (#PCDATA)>
+<!ATTLIST Student StudentId ID #REQUIRED
+                  Name CDATA #REQUIRED
+                  Email CDATA #REQUIRED
+                  EnrollmentDate CDATA #REQUIRED>
+
+                  
+<!ELEMENT Instructor (#PCDATA)>
+ <!ATTLIST Instructor InstructorId ID #REQUIRED
+                    Name CDATA #REQUIRED
+                    Email CDATA #REQUIRED>
+               
+<!ELEMENT Admin (#PCDATA)>
+<!ATTLIST Admin AdminId ID #REQUIRED 
+                Name CDATA #REQUIRED
+                Email CDATA #REQUIRED>  
+                
+<!ELEMENT Manager (Reports*)>
+<!ATTLIST Manager ManagerId ID #REQUIRED Name CDATA #REQUIRED
+Email CDATA #REQUIRED>   
+
+<!ELEMENT Users (Student*, Instructor*, Admin*, Manager*)>
+
+<!ELEMENT Courses (Course*)>
+<!ELEMENT Course (Content*)>
+<!ATTLIST Course CourseId ID #REQUIRED 
+                 Title CDATA #REQUIRED
+                 Desription CDATA #REQUIRED>
+
+<!ELEMENT Content (#PCDATA)>
+<!ATTLIST Content contentId ID #REQUIRED
+                  Type CDATA #REQUIRED
+                   URL CDATA #REQUIRED>
+                 
+ <!ELEMENT Assessments (Assessment*)>    
+ <!ELEMENT Assessment (Questions*)>
+ <!ATTLIST Assessment  AssessmentId ID #REQUIRED
+                       CourseId CDATA #REQUIRED>
+
+ <!ELEMENT Questions (Question*)>
+ <!ELEMENT Question (Options+,Answer?)>
+ <!ATTLIST Question QuestionId ID #REQUIRED 
+                    Text CDATA #REQUIRED>
+
+ <!ELEMENT Options (Option*)>
+ <!ELEMENT Option (#PCDATA)>
+ <!ATTLIST Option OptionId ID #REQUIRED 
+                    Text CDATA #REQUIRED>
+
+ <!ELEMENT Answer (#PCDATA)>
+ 
+ <!ELEMENT Reports (Report*)>
+ <!ELEMENT Report (#PCDATA)>
+ <!ATTLIST Report ReportId ID #REQUIRED 
+                    ReportType CDATA #REQUIRED
+                    GeneratedDate CDATA #REQUIRED
+                    DATA CDATA #REQUIRED
+                    ManagerId CDATA #REQUIRED>

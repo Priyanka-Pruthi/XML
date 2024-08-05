@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE catalog SYSTEM "catalog.dtd"> -->
+<!DOCTYPE catalog [
+<!ELEMENT catalog (book*)>
+<!ELEMENT book (title, author, genre, (price|discounted_price))>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT discounted_price (#PCDATA)>
+<!ENTITY publisher1 "Publisher One">
+<!ENTITY publisher2 "Publisher Two">
+<!ATTLIST book 
+          id ID #REQUIRED
+          availability (in-stock|out-of-stock|pre-order) "in-stock">
+]>
+<catalog>
+    <book id="b1" availability="in-stock">
+        <title>Atomic Habits</title>
+        <author>&publisher1;</author>
+        <genre>Self Improvement</genre>
+        <price>750</price>
+      </book>
+      <book id="b2" availability="out-of-stock">
+        <title>Alchmist</title>
+        <author>&publisher2;</author>
+        <genre>Self Improvement</genre>
+        <discounted_price>450</discounted_price>
+      </book>
+      <book id="b3">
+        <title>Deep Work</title>
+        <author>&publisher1;</author>
+        <genre>Self Improvement</genre>
+        <price>750</price>
+      </book>
+</catalog>

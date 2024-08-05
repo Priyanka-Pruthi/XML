@@ -1,0 +1,13 @@
+<!ELEMENT catalog (book+)>
+<!ELEMENT book (title, author, genre, price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ENTITY publisher1 "Publisher One">
+<!ENTITY publisher1 "Publisher One">
+<!ATTLIST book 
+          id ID #REQUIRED
+          availability (in-stock|out-of-stock|pre-order) "in-stock">
+<!-- xs:string,xs:Integer,xs:float,xs:double,xs:date,xs:dateTime,xs:boolean,xs:base64Binary,xs:hexBinary-->
+<!-- PCDATA -> Parsed Character Data(text content), Empty (No Content), ID,ENTITY

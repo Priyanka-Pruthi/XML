@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<musicCatalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns="http://www.example.com/music"
+              xsi:schemaLocation="http://www.example.com/music musiccatalog.xsd">
+
+ <album id="A1" availability="pre-order">
+    <title>Red</title>
+    <artist>Taylor Swift</artist>
+    <genre>Pop</genre>
+    <releaseDate>2020-05-20</releaseDate>
+    <price>100.0</price>
+ </album>             
+           
+ </musicCatalog>

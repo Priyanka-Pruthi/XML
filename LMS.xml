@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LMS SYSTEM "lms.dtd">
+<LMS>
+    <Users>
+        <Student StudentId="S1" Name="Zeal" Email="Zeal@gmail.com" EnrollmentDate="2024-08-05"/>
+        <Instructor InstructorId="I1" Name="Priyanka" Email="p@gmail.com"/>
+        <Admin AdminId="A1" Name="Palash" Email="p1@gmail.com"/>
+        <Manager ManagerId="M1" Name="Mita" Email="m@gmail.com">
+            <Reports>
+                <Report ReportId="R1" ReportType="Pending_Learning" GeneratedDate="2024-08-01" DATA="some list" ManagerId="M1"/>
+                <Report ReportId="R2" ReportType="New_Learning_Registeration" GeneratedDate="2024-08-05" DATA="some list" ManagerId="M1"/>
+            </Reports>
+        </Manager>
+    </Users>
+    <Courses>
+        <Course CourseId="C1" Title="Learn HTML" Desription="Markup Language">
+            <Content contentId="CN1" Type="Video" URL="https://example.com"></Content>
+            <Content contentId="CN2" Type="InstructorLed" URL="https://example.com"></Content>
+        </Course>
+        <Course CourseId="C2" Title="Learn HTML and CSS" Desription="Markup Language"/>    
+   </Courses>
+   <Assessments>
+     <Assessment AssessmentId="Assessment1" CourseId="C1">
+        <Questions>
+            <Question QuestionId="Q1" Text="What is HTML">
+                <Options>
+                    <Option OptionId="Q1_A1" Text="MarkUp Language"></Option>
+                    <Option OptionId="Q1_A2" Text="Programming Language"></Option>
+                </Options>
+                <Answer>
+                    <![CDATA[Q1_A1]]>
+                </Answer>
+            </Question>
+            <Question QuestionId="Q2" Text="Types of CSS">
+                <Options>
+                    <Option OptionId="Q2_A1" Text="inline"></Option>
+                    <Option OptionId="Q2_A2" Text="internal"></Option>
+                    <Option OptionId="Q2_A3" Text="external"></Option>
+                    <Option OptionId="Q2_A4" Text="All"></Option>
+                </Options>
+                <Answer>
+                    <![CDATA[Q2_A4]]>
+                </Answer>
+            </Question>
+        </Questions>
+     </Assessment>
+   </Assessments>
+ 
+    <Reports>
+        <Report ReportId="R3" ReportType="Pending_Learning" GeneratedDate="2024-08-01" DATA="some list" ManagerId="M1"/>
+        <Report ReportId="R4" ReportType="New_Learning_Registeration" GeneratedDate="2024-08-05" DATA="some list" ManagerId="M1"/>
+    </Reports>
+   
+</LMS>
