@@ -1,0 +1,47 @@
+[
+    {
+      "id": "N1",
+      "title": "The Dark Side of the Moon",
+      "singer": "Pink Floyd",
+      "releaseDate": "1973-03-01",
+      "price": 12.99,
+      "genre": "Rock",
+      "review": 4.8
+    },
+    {
+      "id": "N2",
+      "title": "Abbey Road",
+      "singer": "The Beatles",
+      "releaseDate": "1969-09-26",
+      "price": 15.5,
+      "genre": "Rock",
+      "review": 4.9
+    },
+    {
+      "id": "N3",
+      "title": "Thriller",
+      "singer": "Michael Jackson",
+      "releaseDate": "1982-11-30",
+      "price": 14,
+      "genre": "Pop",
+      "review": 4.7
+    },
+    {
+      "id": "N4",
+      "title": "21",
+      "singer": "Adele",
+      "releaseDate": "2011-01-24",
+      "price": 13,
+      "genre": "Pop",
+      "review": 4.8
+    },
+    {
+      "id": "N5",
+      "title": "Back In Black",
+      "singer": "AC/DC",
+      "releaseDate": "1980-07-25",
+      "price": 17,
+      "genre": "Rock",
+      "review": 4.8
+    }
+  ]
